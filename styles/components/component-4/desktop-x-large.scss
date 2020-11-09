@@ -1,0 +1,82 @@
+@media only screen and (min-width:1025px) and(max-width: 1920px) {
+    .component4{
+        height: 785px;
+        .services-wrapper{
+            padding-top: 137px;
+            margin: auto;
+            text-align: center;
+            color: $white-color;
+            .services{
+                font-weight: 600px;
+                font-size: 31px;
+            }
+            .flex-service{
+                display: flex;
+                margin: auto;
+                justify-content: center;
+                align-items: center;
+                padding-top: 5px;
+                .fa-cogs{
+                    height: 19px;
+                }
+                .line{
+                    height: 1.1px;
+                    width: 37px;
+                    background-color: #D3D3D3;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .hexagon-wrapper{
+            padding-top: 145px;
+            color: $white-color;
+            width: 61%;
+            height: 365px;
+            display: flex;
+            margin: auto;
+            align-items: flex-start;
+            justify-content: space-between;
+            .box{
+                width: 295px;
+                text-align: center;
+                position: relative;
+                .polygon-hover{
+                    display: none;
+                    position: absolute;
+                }
+                .hexagon:hover >  .polygon-hover{
+                    display: block;
+                    position: absolute;
+                    top: 0%;
+                    left: 28.5%;
+                }
+                img{
+                    position: relative;
+                }
+                i {
+                    position: absolute;
+                    top: 24%;
+                    left: 50%;
+                    font-size: 26px;
+                    transform: translate(-50%, -50%);
+                }
+            
+
+            .hexagon-title{
+                    color: $btn-color;
+                    padding-top: 40px;
+                    font-size: 20px;
+                    font-weight: bold;
+             }
+             
+            .hexagon-text{
+                color: $white-color;
+                padding-top: 16px;
+                font-size: 14px;
+                line-height: 22px;
+                }
+            }
+        }
+    }
+}

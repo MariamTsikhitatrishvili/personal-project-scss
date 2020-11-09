@@ -1,0 +1,36 @@
+@media only screen and (min-width:1025px) and(max-width: 1920px) {
+  .component2{
+    height: 765px;
+    .container-wrapper{
+        width: 100%;
+        height: 640px;
+        display: flex;
+        align-items: center;
+        color: $white-color;
+        justify-content: space-between;
+    .par-1{
+          font-size: 62px;
+          font-weight: 200px;
+    }
+    .par-2{
+        font-size: 74px;
+        word-spacing: -6px;
+    }
+    .par-3{
+        padding-top: 10px;
+        font-size: 20px;
+        padding-bottom: 40px;
+    }
+    .text-wrapper{
+        padding-top: 100px;
+    }
+    .par-4{
+        display: none;
+    }
+    button{
+        width: 141px;
+        height: 41px;
+    }
+  }
+}
+}

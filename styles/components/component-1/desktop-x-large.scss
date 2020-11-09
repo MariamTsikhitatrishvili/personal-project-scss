@@ -1,0 +1,32 @@
+@media only screen and (min-width:1025px) and(max-width: 1920px) {
+.navigation {
+    width: 62% ;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    .logo{
+        font-size: 36px;
+    }
+    .nav-items { 
+        display: flex;
+        justify-content: space-between;
+        width: 65%;
+        a{
+            text-decoration: none;
+            color: $white-color;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            margin-right: 20px;
+        }
+    }
+    .burger-menu{
+        display: none;
+    }
+    .burger-menu-mobile{
+        display: none;
+    }
+  } 
+}    

@@ -1,0 +1,25 @@
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+    .component1{
+        height: 110px;
+    .navigation {
+        width: 93% ;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            font-size: 36px;
+        }
+        .nav-items { 
+             display: none;
+            }
+            .burger-menu{
+                display: block;
+            }
+            .burger-menu-mobile{
+                display: none;
+            }
+      } 
+    }
+}   

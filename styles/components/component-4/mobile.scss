@@ -1,0 +1,86 @@
+@media only screen and (min-width: 320px) and (max-width:767px) {
+    .component4{
+        height: 1110px;
+        .services-wrapper{
+            padding-top: 40px;
+            margin: auto;
+            text-align: center;
+            color: $white-color;
+            .services{
+                font-weight: 600px;
+                font-size: 27px;
+            }
+            .flex-service{
+                display: flex;
+                margin: auto;
+                justify-content: center;
+                align-items: center;
+                padding-top: 5px;
+                .fa-cogs{
+                    height: 19px;
+                }
+                .line{
+                    height: 1.1px;
+                    width: 37px;
+                    background-color: #D3D3D3;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .hexagon-wrapper{
+            padding-top: 55px;
+            color: $white-color;
+            width: 61%;
+            height: 365px;
+            display: flex;
+            margin: auto;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            .box{
+                width: 295px;
+                text-align: center;
+                position: relative;
+                .polygon-hover{
+                    display: none;
+                    position: absolute;
+                }
+                .hexagon:hover >  .polygon-hover{
+                    display: block;
+                    position: absolute;
+                    top: 0%;
+                    left: 28.5%;
+                }
+                img{
+                    position: relative;
+                }
+                i {
+                    position: absolute;
+                    top: 20%;
+                    left: 50%;
+                    font-size: 26px;
+                    transform: translate(-50%, -50%);
+                }
+            
+
+            .hexagon-title{
+                    color: $btn-color;
+                    padding-top: 40px;
+                    font-size: 19px;
+                    font-weight: bold;
+             }
+             
+            .hexagon-text{
+                color: $white-color;
+                padding-top: 16px;
+                font-size: 13px;
+                line-height: 22px;
+                padding-bottom: 30px;
+                }
+            }
+        }
+    
+       
+  }
+}

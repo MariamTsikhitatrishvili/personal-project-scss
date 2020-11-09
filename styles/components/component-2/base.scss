@@ -1,0 +1,35 @@
+.component2{
+    background-color: #292929;
+    width: 100%;
+    
+    .fa-angle-left{
+        font-size: 75px;
+        margin-left: 35px;
+    }
+    .fa-angle-right{
+        font-size: 75px;
+        margin-right: 35px;
+  }
+  .text-wrapper{
+      text-align: center;
+  }
+  .par-1{
+    font-weight: 200;
+}
+  .par-2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-top: -13px;
+  }
+  .par-3{
+    font-weight: 300;
+    padding-bottom: 60px;
+}
+  button{
+      box-sizing: border-box;
+      background-color: $btn-color;
+      border: 1px solid $white-color;
+      outline:3px solid  $btn-color;
+      color: $white-color;
+  }
+}
