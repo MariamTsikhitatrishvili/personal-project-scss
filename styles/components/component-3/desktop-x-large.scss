@@ -6,6 +6,9 @@
             font-size: 31px;
             font-weight: 600;
         }
+        .header2{
+            display: none;
+        }
         .logo {
             display: flex;
             align-items: center;
@@ -67,7 +70,7 @@
                         background-color: $icon-bg;
                         position: relative;
                         margin-right: 30px;
-                        .fa-cog{
+                        .icons{
                             position: absolute;
                             top: 50%;
                             left: 50%;
@@ -94,7 +97,7 @@
                         }
                     }
                     p{
-                        width: 220px;
+                        max-width: 220px;
                     }
                 }
             }

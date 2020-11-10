@@ -22,38 +22,8 @@
             grid-gap: 7px;
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            .picture-1{
-                background-image: url("https://www.advancedsciencenews.com/wp-content/uploads/2020/01/brett-ritchie-1vKTnwLMdqs-unsplash1.jpg");
-                background-size: cover;
-            }
-            .picture-2{
-                background-image: url("https://ae01.alicdn.com/kf/Hecf14936b9744a288cb37a7539b0e991P/Lyavshi-Universe-Galaxy-Space-Backdrop-Party-Background-Galaxy-Backdrop-Photo-Booth-Nebula-Astronomy-Planets-Backdrops.jpg_960x960.jpg");
-                background-size: cover;
-            }
-            .picture-3{
-                background-image: url("https://cdn.wallpapersafari.com/65/1/ybw1D4.jpg");
-                background-size: cover;
-            }
-            .picture-4{
-                background-image: url("https://p0.pikist.com/photos/502/689/galaxy-starry-sky-night-sky-star-night-sky-space-universe-astronomy.jpg");
-                background-size: cover;
-                background-position: center;
-            }
-            .picture-5{
-                background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3855221.jpg");
-                background-size: cover;
-                background-position: center;
-            }
-            .picture-6{
-                background-image: url("https://i.pinimg.com/originals/95/76/c9/9576c9cad54635b0cf0d886570c46730.jpg");
-                background-size: cover;
-                background-position: center;
-            }
-            .picture-7{
-                background-image: url("https://wallpaperaccess.com/full/724398.jpg");
-                background-size: cover;
-                background-position: center;
-            }
+           
+            
             .col {
                 grid-row: span 1;
                 grid-column: span 1;
@@ -103,7 +73,9 @@
                         .project-see-more {
                             margin-right: 10px;
                         }
-
+                        .hidden-wrapp{
+                            display: none;
+                        }
                         .project-url {
                             display: flex;
                             width: 45px;

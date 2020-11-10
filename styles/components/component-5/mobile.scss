@@ -71,8 +71,11 @@
                         .project-see-more {
                             margin-right: 10px;
                         }
+                        .project-url1, .hidden{
+                            display: none;
+                        }
 
-                        .project-url {
+                        .project-url1 {
                             display: flex;
                             width: 26px;
                             height: 26px;
@@ -81,7 +84,7 @@
                             border: 1px solid #39b6b2;
                             border-radius: 50%;
                             transition: 0.2s;
-
+                            margin-right: 10px;
                             &:hover {
                                 background-color: #39b6b2;
                                 transition: 0.2s;

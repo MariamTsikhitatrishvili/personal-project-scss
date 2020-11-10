@@ -286,6 +286,9 @@ body {
     font-size: 31px;
     font-weight: 600;
   }
+  .component3 .header2 {
+    display: none;
+  }
   .component3 .logo {
     display: flex;
     align-items: center;
@@ -351,7 +354,7 @@ body {
     position: relative;
     margin-right: 30px;
   }
-  .component3 .main-cont .grid .flex-box .icon-back .fa-cog {
+  .component3 .main-cont .grid .flex-box .icon-back .icons {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -375,7 +378,75 @@ body {
     padding-top: 10px;
   }
   .component3 .main-cont .grid .flex-box p {
-    width: 220px;
+    max-width: 220px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .component3 {
+    height: 800px;
+  }
+  .component3 .main-cont {
+    display: none;
+  }
+  .component3 .header {
+    margin-top: 110px;
+    font-size: 31px;
+    font-weight: 600;
+  }
+  .component3 .logo {
+    display: flex;
+    align-items: center;
+    width: 10%;
+    margin: auto;
+    justify-content: center;
+  }
+  .component3 .logo .fa-bullhorn {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .component3 .logo .line {
+    height: 1.1px;
+    width: 37px;
+    background-color: #D3D3D3;
+  }
+  .component3 .main-cont2 .black-box {
+    width: 90px;
+    height: 90px;
+    background-attachment: black;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .component3 {
+    height: 1140px;
+  }
+  .component3 .main-cont {
+    display: none;
+  }
+  .component3 .header {
+    margin-top: 110px;
+    font-size: 31px;
+    font-weight: 600;
+  }
+  .component3 .logo {
+    display: flex;
+    align-items: center;
+    width: 10%;
+    margin: auto;
+    justify-content: center;
+  }
+  .component3 .logo .fa-bullhorn {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .component3 .logo .line {
+    height: 1.1px;
+    width: 37px;
+    background-color: #D3D3D3;
+  }
+  .component3 .main-cont2 .black-box {
+    width: 90px;
+    height: 90px;
+    background-attachment: black;
   }
 }
 .component4 {
@@ -700,38 +771,6 @@ body {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
-  .component5 .portfolio-grid .picture-1 {
-    background-image: url("https://www.advancedsciencenews.com/wp-content/uploads/2020/01/brett-ritchie-1vKTnwLMdqs-unsplash1.jpg");
-    background-size: cover;
-  }
-  .component5 .portfolio-grid .picture-2 {
-    background-image: url("https://ae01.alicdn.com/kf/Hecf14936b9744a288cb37a7539b0e991P/Lyavshi-Universe-Galaxy-Space-Backdrop-Party-Background-Galaxy-Backdrop-Photo-Booth-Nebula-Astronomy-Planets-Backdrops.jpg_960x960.jpg");
-    background-size: cover;
-  }
-  .component5 .portfolio-grid .picture-3 {
-    background-image: url("https://cdn.wallpapersafari.com/65/1/ybw1D4.jpg");
-    background-size: cover;
-  }
-  .component5 .portfolio-grid .picture-4 {
-    background-image: url("https://p0.pikist.com/photos/502/689/galaxy-starry-sky-night-sky-star-night-sky-space-universe-astronomy.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-  .component5 .portfolio-grid .picture-5 {
-    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3855221.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-  .component5 .portfolio-grid .picture-6 {
-    background-image: url("https://i.pinimg.com/originals/95/76/c9/9576c9cad54635b0cf0d886570c46730.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-  .component5 .portfolio-grid .picture-7 {
-    background-image: url("https://wallpaperaccess.com/full/724398.jpg");
-    background-size: cover;
-    background-position: center;
-  }
   .component5 .portfolio-grid .col {
     grid-row: span 1;
     grid-column: span 1;
@@ -773,6 +812,9 @@ body {
   }
   .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-see-more {
     margin-right: 10px;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .hidden-wrapp {
+    display: none;
   }
   .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-url {
     display: flex;
@@ -876,7 +918,10 @@ body {
   .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-see-more {
     margin-right: 10px;
   }
-  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-url {
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-url1, .component5 .portfolio-grid .portfolio-item .project-info .project-contact .hidden {
+    display: none;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-url1 {
     display: flex;
     width: 26px;
     height: 26px;
@@ -885,12 +930,13 @@ body {
     border: 1px solid #39b6b2;
     border-radius: 50%;
     transition: 0.2s;
+    margin-right: 10px;
   }
-  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-url:hover {
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-url1:hover {
     background-color: #39b6b2;
     transition: 0.2s;
   }
-  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-url i {
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-url1 i {
     line-height: 25px;
     font-size: 10px;
   }
@@ -981,6 +1027,9 @@ body {
   .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-see-more {
     margin-right: 10px;
   }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .hidden-wrapp {
+    display: none;
+  }
   .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-url {
     display: flex;
     width: 36px;
@@ -1026,17 +1075,18 @@ body {
 
 @media only screen and (min-width: 1025px) and (max-width: 1920px) {
   .component6 {
-    margin-bottom: 120px;
+    height: 890px;
   }
   .component6 .header-wrapper {
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 80px;
     margin-bottom: 80px;
   }
   .component6 .header-wrapper .portfolio {
     color: #323232;
     font-size: 31px;
+    font-weight: 500;
     padding-bottom: 10px;
   }
   .component6 * {
@@ -1051,27 +1101,27 @@ body {
     justify-items: center;
     text-align: center;
     color: #606060;
-    max-width: 760px;
+    max-width: 950px;
   }
   .component6 .contact-info .location .icon {
     height: 36px;
   }
   .component6 .contact-info .location i {
-    color: #39b6b2;
+    color: #3AB6B2;
     font-size: 46px;
   }
   .component6 .contact-info .email .icon {
     height: 36px;
   }
   .component6 .contact-info .email i {
-    color: #39b6b2;
+    color: #3AB6B2;
     font-size: 30px;
   }
   .component6 .contact-info .support .icon {
     height: 36px;
   }
   .component6 .contact-info .support i {
-    color: #39b6b2;
+    color: #3AB6B2;
     font-size: 38px;
   }
   .component6 .contact-info h5 {
@@ -1079,12 +1129,13 @@ body {
     font-weight: normal;
   }
   .component6 .contact-info p {
+    font-size: 15px;
     margin-top: 10px;
   }
   .component6 .contact-form {
     margin: auto;
     margin-top: 80px;
-    max-width: 950px;
+    max-width: 955px;
   }
   .component6 .contact-form input {
     width: 100%;
@@ -1093,10 +1144,19 @@ body {
     margin-bottom: 15px;
     outline: none;
   }
+  .component6 .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 20px;
+    width: 100%;
+    height: 170px;
+    font-size: 15px;
+    outline: none;
+  }
   .component6 .contact-form .form-group {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
+    grid-column-gap: 12px;
   }
   .component6 .contact-form .submit-btn {
     display: block;
@@ -1105,9 +1165,213 @@ body {
   .component6 .contact-form .submit-btn button {
     display: block;
     width: 160px;
+    height: 42px;
+    background: #3AB6B2;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .component6 {
+    height: 940px;
+  }
+  .component6 .header-wrapper {
+    margin: auto;
+    text-align: center;
+    padding-top: 35px;
+    margin-bottom: 20px;
+  }
+  .component6 .header-wrapper .portfolio {
+    color: #323232;
+    font-size: 27px;
+    font-weight: 500;
+    padding-bottom: 10px;
+  }
+  .component6 * {
+    box-sizing: border-box !important;
+  }
+  .component6 .contact-info {
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    color: #606060;
+    max-width: 950px;
+    margin-top: 30px;
+  }
+  .component6 .contact-info .location .icon {
+    height: 36px;
+  }
+  .component6 .contact-info .location i {
+    color: #3AB6B2;
+    font-size: 46px;
+  }
+  .component6 .contact-info .email .icon {
+    height: 36px;
+  }
+  .component6 .contact-info .email i {
+    color: #3AB6B2;
+    font-size: 30px;
+  }
+  .component6 .contact-info .support .icon {
+    height: 36px;
+  }
+  .component6 .contact-info .support i {
+    color: #3AB6B2;
+    font-size: 38px;
+  }
+  .component6 .contact-info h5 {
+    margin-top: 30px;
+    font-weight: normal;
+  }
+  .component6 .contact-info p {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .component6 .contact-form {
+    margin: auto;
+    margin-top: 40px;
+    width: 88%;
+  }
+  .component6 .contact-form input {
+    width: 100%;
+    height: 46px;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+  }
+  .component6 .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 141px;
+    max-width: 100%;
+  }
+  .component6 .contact-form .form-group {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .component6 .contact-form .submit-btn {
+    display: block;
+    width: 100%;
+  }
+  .component6 .contact-form .submit-btn button {
+    display: block;
+    width: 160px;
+    height: 42px;
+    background: #3AB6B2;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .component6 {
+    height: 775px;
+  }
+  .component6 .header-wrapper {
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 50px;
+  }
+  .component6 .header-wrapper .portfolio {
+    color: #323232;
+    font-size: 31px;
+    font-weight: 500;
+    padding-bottom: 10px;
+  }
+  .component6 * {
+    box-sizing: border-box !important;
+  }
+  .component6 .contact-info {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    color: #606060;
+    max-width: 950px;
+  }
+  .component6 .contact-info .location {
+    margin-right: 60px;
+  }
+  .component6 .contact-info .location .icon {
+    height: 36px;
+  }
+  .component6 .contact-info .location i {
+    color: #3AB6B2;
+    font-size: 46px;
+  }
+  .component6 .contact-info .email .icon {
+    height: 36px;
+  }
+  .component6 .contact-info .email i {
+    color: #3AB6B2;
+    font-size: 30px;
+  }
+  .component6 .contact-info .support {
+    margin-left: 70px;
+  }
+  .component6 .contact-info .support .icon {
+    height: 36px;
+  }
+  .component6 .contact-info .support i {
+    color: #3AB6B2;
+    font-size: 38px;
+  }
+  .component6 .contact-info h5 {
+    margin-top: 25px;
+    font-weight: normal;
+  }
+  .component6 .contact-info p {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .component6 .contact-form {
+    margin: auto;
+    margin-top: 40px;
+    width: 88%;
+  }
+  .component6 .contact-form input {
+    width: 100%;
     height: 45px;
-    background: #39b6b2;
-    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+  }
+  .component6 .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    height: 171px;
+    max-width: 100%;
+  }
+  .component6 .contact-form .form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .component6 .contact-form .submit-btn {
+    display: block;
+    width: 100%;
+  }
+  .component6 .contact-form .submit-btn button {
+    display: block;
+    width: 160px;
+    height: 42px;
+    background: #3AB6B2;
+    color: #FFFFFF;
     text-transform: uppercase;
     outline: 0;
     box-shadow: none;

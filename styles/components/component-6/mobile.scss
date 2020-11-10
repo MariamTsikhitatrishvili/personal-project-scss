@@ -1,3 +1,122 @@
 @media only screen and (min-width: 320px) and (max-width:767px) {
   
+    .component6 {
+        height: 940px ;
+        .header-wrapper {
+            margin: auto;
+            text-align: center;
+            padding-top: 35px;
+            margin-bottom: 20px;
+
+            .portfolio {
+                color: $title-color;
+                font-size: 27px;
+                font-weight: 500;
+                padding-bottom: 10px;
+            }
+        }
+
+        * {
+            box-sizing: border-box !important;
+        }
+
+        .contact-info {
+            margin: auto;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap:20px;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            color: #606060;
+            max-width: 950px;
+            margin-top: 30px;
+
+            .location {
+                .icon {
+                    height: 36px;
+                }
+
+                i {
+                    color: $btn-color;
+                    font-size: 46px;
+                }
+            }
+
+            .email {
+                .icon {
+                    height: 36px;
+                }
+
+                i {
+                    color: $btn-color;
+                    font-size: 30px;
+                }
+            }
+
+            .support {
+                .icon {
+                    height: 36px;
+                }
+
+                i {
+                    color: $btn-color;
+                    font-size: 38px;
+                }
+            }
+
+            h5 {
+                margin-top: 30px;
+                font-weight: normal;
+            }
+
+            p {
+                font-size: 15px;
+                margin-top: 10px;
+            }
+        }
+
+        .contact-form {
+            margin: auto;
+            margin-top: 40px;
+            width: 88%;
+            input {
+                width: 100%;
+                height: 46px;
+                padding: 10px;
+                margin-bottom: 10px;
+                outline: none;
+            }
+            textarea{
+            margin-bottom: 10px;    
+            padding: 10px;
+            width: 100%;
+            height: 141px;
+            max-width: 100%;
+            
+            }
+            .form-group {
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+            }
+
+            .submit-btn {
+                display: block;
+                width: 100%;
+
+                button {
+                    display: block;
+                    width: 160px;
+                    height: 42px;
+                    background:$btn-color;
+                    color: $white-color;
+                    text-transform: uppercase;
+                    outline: 0;
+                    box-shadow: none;
+                    border: 0;
+                }
+            }
+        }
+    }
 }
