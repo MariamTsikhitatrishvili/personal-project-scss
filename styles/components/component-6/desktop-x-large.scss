@@ -1,0 +1,113 @@
+@media only screen and (min-width:1025px) and (max-width: 1920px) {
+    .component6 {
+        margin-bottom: 120px;
+
+        .header-wrapper {
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+            margin-bottom: 80px;
+
+            .portfolio {
+                color: $title-color;
+                font-size: 31px;
+                padding-bottom: 10px;
+            }
+        }
+
+        * {
+            box-sizing: border-box !important;
+        }
+
+        .contact-info {
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            color: #606060;
+            max-width: 760px;
+
+            .location {
+                .icon {
+                    height: 36px;
+                }
+
+                i {
+                    color: #39b6b2;
+                    font-size: 46px;
+                }
+            }
+
+            .email {
+                .icon {
+                    height: 36px;
+                }
+
+                i {
+                    color: #39b6b2;
+                    font-size: 30px;
+                }
+            }
+
+            .support {
+                .icon {
+                    height: 36px;
+                }
+
+                i {
+                    color: #39b6b2;
+                    font-size: 38px;
+                }
+            }
+
+            h5 {
+                margin-top: 25px;
+                font-weight: normal;
+            }
+
+            p {
+                margin-top: 10px;
+            }
+        }
+
+        .contact-form {
+            margin: auto;
+            margin-top: 80px;
+            max-width: 950px;
+
+            input {
+                width: 100%;
+                height: 45px;
+                padding: 20px;
+                margin-bottom: 15px;
+                outline: none;
+            }
+
+            .form-group {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 20px;
+            }
+
+            .submit-btn {
+                display: block;
+                width: 100%;
+
+                button {
+                    display: block;
+                    width: 160px;
+                    height: 45px;
+                    background: #39b6b2;
+                    color: white;
+                    text-transform: uppercase;
+                    outline: 0;
+                    box-shadow: none;
+                    border: 0;
+                }
+            }
+        }
+    }
+}

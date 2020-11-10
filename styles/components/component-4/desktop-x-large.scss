@@ -42,16 +42,18 @@
                 text-align: center;
                 position: relative;
                 .polygon-hover{
+
                     display: none;
-                    position: absolute;
+                    // position: absolute;
                 }
                 .hexagon:hover >  .polygon-hover{
                     display: block;
                     position: absolute;
                     top: 0%;
-                    left: 28.5%;
+                    left:50%;
+                    transform: translate(-50%,0);
                 }
-                img{
+                .polygon{
                     position: relative;
                 }
                 i {
@@ -68,6 +70,7 @@
                     padding-top: 40px;
                     font-size: 20px;
                     font-weight: bold;
+                    min-width: 250px;
              }
              
             .hexagon-text{

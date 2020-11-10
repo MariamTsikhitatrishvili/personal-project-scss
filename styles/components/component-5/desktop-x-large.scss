@@ -1,0 +1,123 @@
+@media only screen and (min-width:1025px) and (max-width: 1920px) {
+    .component5 {
+        height: 1024px;
+
+        .header-wrapper {
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+            margin-bottom: 80px;
+
+            .portfolio {
+                color: $title-color;
+                font-size: 31px;
+                padding-bottom: 10px;
+            }
+        }
+
+        .portfolio-grid {
+            width: 100%;
+            height: 765px;
+            display: grid;
+            grid-gap: 7px;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+            .col {
+                grid-row: span 1;
+                grid-column: span 1;
+                background-color: $black-color;
+            }
+
+            .col2 {
+                grid-row: span 1;
+                grid-column: span 2;
+                background-color: $black-color;
+            }
+            .hidden-col, .hidden-col2{
+                display: none;
+            }
+           
+            .portfolio-item {
+                &:hover {
+                    .project-info {
+                        opacity: 1;
+                        transition: 0.2s;
+                    }
+                }
+
+                .project-info {
+                    opacity: 0;
+                    transition: 0.2s;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .project-contact {
+                        width: 100%;
+                        height: 80%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #292929;
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }
+
+                        .project-see-more {
+                            margin-right: 10px;
+                        }
+
+                        .project-url {
+                            display: flex;
+                            width: 45px;
+                            height: 45px;
+                            justify-content: center;
+                            align-content: center;
+                            border: 1px solid #39b6b2;
+                            border-radius: 50%;
+                            transition: 0.2s;
+
+                            &:hover {
+                                background-color: #39b6b2;
+                                transition: 0.2s;
+                            }
+
+                            i {
+                                line-height: 45px;
+                            }
+                        }
+                    }
+
+                    .project-content {
+                        display: block;
+                        width: 100%;
+                        height: 20%;
+                        background-color: black;
+                        display: grid;
+                        align-content: space-evenly;
+
+                        .project-title {
+                            color: white;
+                            text-align: center;
+                            text-transform: uppercase;
+                            font-size: 20px;
+                        }
+
+                        .project-desc {
+                            color: white;
+                            text-align: center;
+                            font-size: 16px;
+                            color: $btn-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

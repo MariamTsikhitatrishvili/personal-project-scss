@@ -107,6 +107,7 @@ body {
   }
 }
 .component2 {
+  background-image: url("images/component2/backgroud.jpg");
   background-color: #292929;
   width: 100%;
 }
@@ -430,15 +431,15 @@ body {
   }
   .component4 .hexagon-wrapper .box .polygon-hover {
     display: none;
-    position: absolute;
   }
   .component4 .hexagon-wrapper .box .hexagon:hover > .polygon-hover {
     display: block;
     position: absolute;
     top: 0%;
-    left: 28.5%;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
-  .component4 .hexagon-wrapper .box img {
+  .component4 .hexagon-wrapper .box .polygon {
     position: relative;
   }
   .component4 .hexagon-wrapper .box i {
@@ -453,6 +454,7 @@ body {
     padding-top: 40px;
     font-size: 20px;
     font-weight: bold;
+    min-width: 250px;
   }
   .component4 .hexagon-wrapper .box .hexagon-text {
     color: #FFFFFF;
@@ -621,6 +623,556 @@ body {
     font-size: 14px;
     line-height: 22px;
     padding-bottom: 70px;
+  }
+}
+.component5 {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  .component5 {
+    height: 1024px;
+  }
+  .component5 .header-wrapper {
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 80px;
+  }
+  .component5 .header-wrapper .portfolio {
+    color: #323232;
+    font-size: 31px;
+    padding-bottom: 10px;
+  }
+  .component5 .portfolio-grid {
+    width: 100%;
+    height: 765px;
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .component5 .portfolio-grid .col {
+    grid-row: span 1;
+    grid-column: span 1;
+    background-color: black;
+  }
+  .component5 .portfolio-grid .col2 {
+    grid-row: span 1;
+    grid-column: span 2;
+    background-color: black;
+  }
+  .component5 .portfolio-grid .hidden-col, .component5 .portfolio-grid .hidden-col2 {
+    display: none;
+  }
+  .component5 .portfolio-grid .portfolio-item:hover .project-info {
+    opacity: 1;
+    transition: 0.2s;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info {
+    opacity: 0;
+    transition: 0.2s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact a {
+    text-decoration: none;
+    color: white;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-see-more {
+    margin-right: 10px;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-url {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid #39b6b2;
+    border-radius: 50%;
+    transition: 0.2s;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-url:hover {
+    background-color: #39b6b2;
+    transition: 0.2s;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-url i {
+    line-height: 45px;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-content {
+    display: block;
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    display: grid;
+    align-content: space-evenly;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-content .project-title {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-content .project-desc {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    color: #3AB6B2;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .component5 {
+    height: 805px;
+  }
+  .component5 .header-wrapper {
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 25px;
+  }
+  .component5 .header-wrapper .portfolio {
+    color: #323232;
+    font-size: 31px;
+    padding-bottom: 10px;
+  }
+  .component5 .portfolio-grid {
+    margin: auto;
+    width: 90%;
+    height: 675px;
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .component5 .portfolio-grid .col {
+    grid-row: span 1;
+    grid-column: span 1;
+    background-color: black;
+    display: none;
+  }
+  .component5 .portfolio-grid .col2 {
+    grid-row: span 1;
+    grid-column: span 2;
+    background-color: black;
+  }
+  .component5 .portfolio-grid .portfolio-item:hover .project-info {
+    opacity: 1;
+    transition: 0.2s;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info {
+    opacity: 0;
+    transition: 0.2s;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact a {
+    text-decoration: none;
+    color: white;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-see-more {
+    margin-right: 10px;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-url {
+    display: flex;
+    width: 26px;
+    height: 26px;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid #39b6b2;
+    border-radius: 50%;
+    transition: 0.2s;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-url:hover {
+    background-color: #39b6b2;
+    transition: 0.2s;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-url i {
+    line-height: 25px;
+    font-size: 10px;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-content {
+    display: block;
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    display: grid;
+    align-content: space-evenly;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-content .project-title {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-content .project-desc {
+    text-align: center;
+    font-size: 11px;
+    color: #319692;
+    font-style: italic;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .component5 {
+    height: 670px;
+  }
+  .component5 .header-wrapper {
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 60px;
+  }
+  .component5 .header-wrapper .portfolio {
+    color: #323232;
+    font-size: 31px;
+    padding-bottom: 10px;
+  }
+  .component5 .portfolio-grid {
+    margin: auto;
+    width: 90%;
+    height: 479px;
+    display: grid;
+    grid-gap: 21px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .component5 .portfolio-grid .col {
+    grid-row: span 1;
+    grid-column: span 1;
+    background-color: black;
+  }
+  .component5 .portfolio-grid .col2 {
+    grid-row: span 1;
+    grid-column: span 2;
+    background-color: black;
+    display: none;
+  }
+  .component5 .portfolio-grid .portfolio-item:hover .project-info {
+    opacity: 1;
+    transition: 0.2s;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info {
+    opacity: 0;
+    transition: 0.2s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact {
+    width: 100%;
+    height: 71%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-see-more {
+    margin-right: 10px;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-url {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid #39b6b2;
+    border-radius: 50%;
+    transition: 0.2s;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-url:hover {
+    background-color: #39b6b2;
+    transition: 0.2s;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-contact .project-url i {
+    line-height: 35px;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-content {
+    display: block;
+    width: 100%;
+    height: 25%;
+    background-color: black;
+    display: grid;
+    align-content: space-evenly;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-content .project-title {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .component5 .portfolio-grid .portfolio-item .project-info .project-content .project-desc {
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+    color: #3AB6B2;
+  }
+}
+.component6 {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  .component6 {
+    margin-bottom: 120px;
+  }
+  .component6 .header-wrapper {
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 80px;
+  }
+  .component6 .header-wrapper .portfolio {
+    color: #323232;
+    font-size: 31px;
+    padding-bottom: 10px;
+  }
+  .component6 * {
+    box-sizing: border-box !important;
+  }
+  .component6 .contact-info {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    color: #606060;
+    max-width: 760px;
+  }
+  .component6 .contact-info .location .icon {
+    height: 36px;
+  }
+  .component6 .contact-info .location i {
+    color: #39b6b2;
+    font-size: 46px;
+  }
+  .component6 .contact-info .email .icon {
+    height: 36px;
+  }
+  .component6 .contact-info .email i {
+    color: #39b6b2;
+    font-size: 30px;
+  }
+  .component6 .contact-info .support .icon {
+    height: 36px;
+  }
+  .component6 .contact-info .support i {
+    color: #39b6b2;
+    font-size: 38px;
+  }
+  .component6 .contact-info h5 {
+    margin-top: 25px;
+    font-weight: normal;
+  }
+  .component6 .contact-info p {
+    margin-top: 10px;
+  }
+  .component6 .contact-form {
+    margin: auto;
+    margin-top: 80px;
+    max-width: 950px;
+  }
+  .component6 .contact-form input {
+    width: 100%;
+    height: 45px;
+    padding: 20px;
+    margin-bottom: 15px;
+    outline: none;
+  }
+  .component6 .contact-form .form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+  }
+  .component6 .contact-form .submit-btn {
+    display: block;
+    width: 100%;
+  }
+  .component6 .contact-form .submit-btn button {
+    display: block;
+    width: 160px;
+    height: 45px;
+    background: #39b6b2;
+    color: white;
+    text-transform: uppercase;
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+  }
+}
+.component7 {
+  width: 100%;
+  background-color: #111111;
+}
+.component7 .logo {
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  .component7 {
+    width: 100%;
+    display: grid;
+    height: 300px;
+    background-color: #111111;
+    justify-items: center;
+    align-content: space-evenly;
+  }
+  .component7 .social-icons {
+    display: flex;
+    padding-bottom: 30px;
+  }
+  .component7 .social-icons div {
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-color: #252525;
+    border-radius: 2px;
+    transition: 0.2s;
+    text-align: center;
+    font-size: 11px;
+  }
+  .component7 .social-icons div:not(:first-child) {
+    margin-left: 8px;
+  }
+  .component7 .social-icons div:hover {
+    background-color: #45629e;
+    transition: 0.2s;
+  }
+  .component7 .social-icons div i {
+    line-height: 45px;
+    color: white;
+  }
+  .component7 .copyright {
+    color: white;
+    font-size: 11px;
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .component7 {
+    width: 100%;
+    display: grid;
+    height: 310px;
+    background-color: #111111;
+    justify-items: center;
+    align-content: space-evenly;
+  }
+  .component7 .social-icons {
+    display: flex;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    max-width: 186px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .component7 .social-icons div {
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-color: #252525;
+    border-radius: 2px;
+    transition: 0.2s;
+    text-align: center;
+    font-size: 11px;
+  }
+  .component7 .social-icons div:not(:first-child) {
+    margin-left: 8px;
+  }
+  .component7 .social-icons div:hover {
+    background-color: #45629e;
+    transition: 0.2s;
+  }
+  .component7 .social-icons div i {
+    font-size: 15px;
+    line-height: 45px;
+    color: white;
+  }
+  .component7 .social-icons div:nth-child(5) {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  .component7 .social-icons div:nth-child(6) {
+    margin-top: 8px;
+  }
+  .component7 .copyright {
+    color: white;
+    font-size: 11px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .component7 {
+    width: 100%;
+    display: grid;
+    height: 310px;
+    background-color: #111111;
+    justify-items: center;
+    align-content: space-evenly;
+  }
+  .component7 .social-icons {
+    display: flex;
+    padding-bottom: 10px;
+    padding-right: 5px;
+  }
+  .component7 .social-icons div {
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-color: #252525;
+    border-radius: 2px;
+    transition: 0.2s;
+    text-align: center;
+    font-size: 11px;
+  }
+  .component7 .social-icons div:not(:first-child) {
+    margin-left: 8px;
+  }
+  .component7 .social-icons div:hover {
+    background-color: #45629e;
+    transition: 0.2s;
+  }
+  .component7 .social-icons div i {
+    font-size: 15px;
+    line-height: 45px;
+    color: white;
+  }
+  .component7 .copyright {
+    color: white;
+    font-size: 11px;
+    padding-bottom: 30px;
   }
 }
 
