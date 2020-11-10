@@ -57,11 +57,11 @@
 
                     .project-contact {
                         width: 100%;
-                        height: 80%;
+                        height: 82%;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        background-color: #292929;
+                        background-color: rgb(105,105,105,0.4);
 
                         a {
                             text-decoration: none;
@@ -98,10 +98,11 @@
                         display: block;
                         width: 100%;
                         height: 30%;
+                        margin-bottom: -21px;
                         background-color: black;
                         display: grid;
                         align-content: space-evenly;
-
+                        bottom: 0;
                         .project-title {
                             color: white;
                             text-align: center;
